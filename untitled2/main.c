@@ -39,7 +39,7 @@ int main() {
     }
 
     // Kalori dosyasını okuma
-    while (fgets(satir, sizeof(satir), kaloriDosyasi)) // Kalori dosyasından bir satır okunup okunan satır line dizisine yazılır
+    while (fgets(satir, sizeof(satir), kaloriDosyasi)) // Kalori dosyasından bir satır okunup okunan satır dizisine yazılır
         // Okumanın hatalı olmasına veya dosyanın bitişine kadar döngü devam eder. Yiyecekler bittiğinde fgets "NULL" değeri döndürür.
         {
         sscanf(satir, "%s %d", urunler[urunSayisi].urun_adi, &urunler[urunSayisi].kalori);
